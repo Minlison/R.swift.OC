@@ -1,0 +1,6 @@
+framework module Pods_Shared_ResourceApp {
+  umbrella header "Pods-Shared-ResourceApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

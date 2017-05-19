@@ -1,0 +1,6 @@
+framework module Pods_Shared_ResourceAppTests {
+  umbrella header "Pods-Shared-ResourceAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
