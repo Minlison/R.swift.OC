@@ -8,6 +8,21 @@
 //
 
 import Foundation
+extension String {
+  
+  var convertString: String {
+    var replaces = ["\\a","\\b","\\f","\\n","\\r","\\t","\\v","\'","\"","\\?"]
+    var tmp: String = "\(self)"
+    replaces.map { (replace) -> String in
+      print(replace)
+      tmp = tmp.replacingOccurrences(of: "\n", with: "\\n")
+      tmp = tmp.replacingOccurrences(of: "\r", with: "\\r")
+      tmp = tmp.replacingOccurrences(of: "\t", with: "\\t")
+      return replace
+    }
+    return tmp
+  }
+}
 
 struct StringsStructGenerator: ExternalOnlyStructGenerator {
   private let localizableStrings: [LocalizableStrings]
@@ -174,9 +189,9 @@ struct StringsStructGenerator: ExternalOnlyStructGenerator {
       comments: values.comments,
       accessModifier: externalAccessLevel,
       isStatic: true,
-      name: SwiftIdentifier(name: values.key),
+      name: SwiftIdentifier(name: values.tableName+"_"+values.key),
       typeDefinition: .inferred(Type.StringResource),
-      value: "@\"\(escapedKey)\""
+      value: "[[NSBundle mainBundle] localizedStringForKey:@\"\(values.key.escapedStringLiteral)\" value:@\"\(values.values.first?.1.convertString ?? "")\" table:@\"\(values.tableName)\"]"
     )
   }
 
@@ -195,7 +210,7 @@ struct StringsStructGenerator: ExternalOnlyStructGenerator {
       comments: values.comments,
       accessModifier: externalAccessLevel,
       isStatic: true,
-      name: SwiftIdentifier(name: values.key),
+      name: SwiftIdentifier(name: values.tableName+"_"+values.key),
       generics: nil,
       parameters: [
         Function.Parameter(name: "_", type: Type._Void, defaultValue: "()")
@@ -221,13 +236,13 @@ struct StringsStructGenerator: ExternalOnlyStructGenerator {
       comments: values.comments,
       accessModifier: externalAccessLevel,
       isStatic: true,
-      name: SwiftIdentifier(name: values.key),
+      name: SwiftIdentifier(name: values.tableName+"_"+values.key),
       generics: nil,
       parameters: params,
       doesThrow: false,
       returnType: Type._String,
 //      body: "return String(format: \(values.localizedString), locale: R.applicationLocale, \(args))"
-      body: "return [NSString localizedStringWithFormat:\(values.localizedString),\(args)];"
+      body: "return [NSString localizedStringWithFormat:\(values.localizedString.convertString),\(args)];"
     )
   }
 
@@ -257,11 +272,13 @@ private struct StringValues {
 
     if tableName == "Localizable" {
 //      return "NSLocalizedString(\"\(escapedKey)\", bundle: R.hostingBundle, comment: \"\")"
+      //[[NSBundle mainBundle] localizedStringForKey:@"" value:@"" table:@""];
       return "NSLocalizedString(@\"\(escapedKey)\", @\"\")"
     }
     else {
 //      return "NSLocalizedString(\"\(escapedKey)\", tableName: \"\(tableName)\", bundle: R.hostingBundle, comment: \"\")"
-      return "NSLocalizedStringFromTable(@\"\(escapedKey)\", nil, @\"\(tableName)\")"
+      let tmpValue = values.first?.1.convertString ?? "";
+      return "[[NSBundle mainBundle] localizedStringForKey:@\"\(escapedKey)\" value:@\"\(tmpValue)\" table:@\"\(tableName)\"]"
     }
   }
 

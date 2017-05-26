@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "d09ab69ebeebf546dd555e22155406ce"
+build_time: [549087089, 471437000]
+inputs:
+  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/Sources/rswift/main.swift": [548498424, 0]
+  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/Sources/rswift/Rswift.swift": [548498422, 0]

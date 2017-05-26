@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/rswift.build/master.swiftdeps"
+  },
+  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/Sources/rswift/main.swift": {
+    "dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/rswift.build/main.d",
+    "object": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/rswift.build/main.swift.o",
+    "swiftmodule": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/rswift.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/rswift.build/main.swiftdeps"
+  },
+  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/Sources/rswift/Rswift.swift": {
+    "dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/rswift.build/Rswift.d",
+    "object": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/rswift.build/Rswift.swift.o",
+    "swiftmodule": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/rswift.build/Rswift~partial.swiftmodule",
+    "swift-dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/rswift.build/Rswift.swiftdeps"
+  }
+}

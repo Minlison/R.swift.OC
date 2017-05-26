@@ -1,0 +1,16 @@
+# pack-refs with: peeled fully-peeled 
+67b09ec2db6daed704cd1d2b183b8e69cb88aad6 refs/heads/kylef/swift-3.0
+bf4f3e83a4ff296350190e80ccd0d702125d5ca6 refs/heads/kylef/swift3-p2
+e46b75cf03ad5e563b4b0a5068d3d6f04d77d80b refs/heads/master
+5055245201434a299e745cf9cc7dd7e790d917a9 refs/tags/0.1.0
+17693252c66af147deca00fd2ed54c0cd43c81e4 refs/tags/0.2.0
+75b79d3eb3f0bde0fdd29a73132e6c9ec4fcff3d refs/tags/0.3.0
+23a6df2989f68854ca403e274dc440afc5cf4c47 refs/tags/0.4.0
+4b043e5bc0cfb0e61dd6fe84563fa04d5b3de675 refs/tags/0.4.1
+00fac4ae268561d0deb31e7f816424e4adf5fe6b refs/tags/0.5.0
+367071b3acaff93987f77df81115bffab2f84058 refs/tags/0.6.0
+8e3aa675b8c24741bf8bc0bd9bd157e868329de8 refs/tags/0.6.1
+478e7f216df898ad818e3b6df70fba99c647ebda refs/tags/0.6.2
+57112a102b389d14b7b8917d1b661c597748f813 refs/tags/0.7.0
+e338044822489463b6b5684e8ee81b7e4ef04ba9 refs/tags/0.7.1
+e46b75cf03ad5e563b4b0a5068d3d6f04d77d80b refs/tags/0.7.2

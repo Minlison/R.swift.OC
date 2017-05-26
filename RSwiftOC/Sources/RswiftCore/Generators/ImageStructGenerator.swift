@@ -39,7 +39,7 @@ struct ImageStructGenerator: ExternalOnlyStructGenerator {
           comments: ["Image `\(name)`."],
           accessModifier: externalAccessLevel,
           isStatic: true,
-          name: SwiftIdentifier(name: name),
+          name: SwiftIdentifier(name: name+"name"),
           typeDefinition: .inferred(Type.ImageResource),
 		value: "@\"\(name)\""
         )
@@ -60,23 +60,23 @@ struct ImageStructGenerator: ExternalOnlyStructGenerator {
 
   private func imageFunction(for name: String, at externalAccessLevel: AccessLevel) -> Function {
     return Function(
-      comments: ["`UIImage(named: \"\(name)\", bundle: ..., traitCollection: ...)`"],
+      comments: ["`[UIImage imageNamed: imageWithRenderingMode:mode];`"],
       accessModifier: externalAccessLevel,
       isStatic: true,
-      name: SwiftIdentifier(name: name),
+      name: SwiftIdentifier(name: name+"_image"),
       generics: nil,
       parameters: [
         Function.Parameter(
-          name: "compatibleWith",
-          localName: "traitCollection",
-          type: Type._UITraitCollection.asOptional(),
+          name: "renderingMode",
+          localName: "mode",
+          type: Type._UIImageRenderingMode,
           defaultValue: "nil"
         )
       ],
       doesThrow: false,
       returnType: Type._UIImage.asOptional(),
 //      body: "return UIKit.UIImage(resource: R.image.\(SwiftIdentifier(name: name)), compatibleWith: traitCollection)"
-      body: "return [UIImage imageNamed:@\"\(name)\" inBundle:nil compatibleWithTraitCollection:traitCollection];"
+      body: "return [[UIImage imageNamed:@\"\(name)\"] imageWithRenderingMode:mode];"
     )
   }
 }

@@ -1,0 +1,298 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ColorPalette"
+provides-nominal:
+- "V10RswiftCore12ColorPalette"
+provides-member:
+- ["V10RswiftCore12ColorPalette", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- "Array"
+- "AssignmentPrecedence"
+- "ColorPalette"
+- !private "NSCalibratedRGBColorSpace"
+- "NSColor"
+- !private "NSColorList"
+- !private "ResourceParsingError"
+- "Set"
+- "String"
+- "StringLiteralType"
+- "URL"
+- "WhiteListedExtensionsResourceType"
+- !private "warn"
+depends-member:
+- !private ["Ps9AnyObject", "allKeys"]
+- !private ["Ps9AnyObject", "color"]
+- !private ["Ps9AnyObject", "colorSpace"]
+- !private ["Ps9AnyObject", "colorSpaceName"]
+- !private ["Ps9AnyObject", "description"]
+- ["Ps9AnyObject", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "allKeys"]
+- !private ["Ps7CVarArg", "color"]
+- !private ["Ps7CVarArg", "colorSpace"]
+- !private ["Ps7CVarArg", "colorSpaceName"]
+- !private ["Ps7CVarArg", "description"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["V10RswiftCore12ColorPalette", "ColorPalette"]
+- !private ["V10RswiftCore12ColorPalette", "NSCalibratedRGBColorSpace"]
+- ["V10RswiftCore12ColorPalette", "NSColor"]
+- !private ["V10RswiftCore12ColorPalette", "NSColorList"]
+- !private ["V10RswiftCore12ColorPalette", "ResourceParsingError"]
+- ["V10RswiftCore12ColorPalette", "Set"]
+- ["V10RswiftCore12ColorPalette", "String"]
+- ["V10RswiftCore12ColorPalette", "URL"]
+- ["V10RswiftCore12ColorPalette", "colors"]
+- ["V10RswiftCore12ColorPalette", "deinit"]
+- ["V10RswiftCore12ColorPalette", "filename"]
+- ["V10RswiftCore12ColorPalette", "init"]
+- ["V10RswiftCore12ColorPalette", "supportedExtensions"]
+- !private ["V10RswiftCore12ColorPalette", "throwIfUnsupportedExtension"]
+- !private ["V10RswiftCore12ColorPalette", "warn"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "allKeys"]
+- !private ["Ps28CustomDebugStringConvertible", "color"]
+- !private ["Ps28CustomDebugStringConvertible", "colorSpace"]
+- !private ["Ps28CustomDebugStringConvertible", "colorSpaceName"]
+- !private ["Ps28CustomDebugStringConvertible", "description"]
+- !private ["Ps28CustomDebugStringConvertible", "filename"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "lastPathComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "path"]
+- !private ["Ps28CustomDebugStringConvertible", "pathExtension"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "filename"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "lastPathComponent"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "path"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "pathExtension"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "allKeys"]
+- !private ["Ps23CustomStringConvertible", "color"]
+- !private ["Ps23CustomStringConvertible", "colorSpace"]
+- !private ["Ps23CustomStringConvertible", "colorSpaceName"]
+- !private ["Ps23CustomStringConvertible", "description"]
+- !private ["Ps23CustomStringConvertible", "filename"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "lastPathComponent"]
+- !private ["Ps23CustomStringConvertible", "path"]
+- !private ["Ps23CustomStringConvertible", "pathExtension"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "allKeys"]
+- !private ["Ps9Equatable", "color"]
+- !private ["Ps9Equatable", "colorSpace"]
+- !private ["Ps9Equatable", "colorSpaceName"]
+- !private ["Ps9Equatable", "description"]
+- !private ["Ps9Equatable", "filename"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "lastPathComponent"]
+- !private ["Ps9Equatable", "path"]
+- !private ["Ps9Equatable", "pathExtension"]
+- !private ["Ps5Error", "parsingFailed"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "allKeys"]
+- !private ["Ps8Hashable", "color"]
+- !private ["Ps8Hashable", "colorSpace"]
+- !private ["Ps8Hashable", "colorSpaceName"]
+- !private ["Ps8Hashable", "description"]
+- !private ["Ps8Hashable", "filename"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "lastPathComponent"]
+- !private ["Ps8Hashable", "path"]
+- !private ["Ps8Hashable", "pathExtension"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "allKeys"]
+- !private ["PSo8NSCoding", "color"]
+- !private ["PSo8NSCoding", "colorSpace"]
+- !private ["PSo8NSCoding", "colorSpaceName"]
+- !private ["PSo8NSCoding", "description"]
+- ["PSo8NSCoding", "init"]
+- !private ["CSo7NSColor", "colorSpace"]
+- !private ["CSo7NSColor", "colorSpaceName"]
+- !private ["CSo11NSColorList", "allKeys"]
+- !private ["CSo11NSColorList", "color"]
+- !private ["CSo11NSColorList", "init"]
+- !private ["CSo12NSColorSpace", "description"]
+- !private ["PSo9NSCopying", "colorSpace"]
+- !private ["PSo9NSCopying", "colorSpaceName"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "allKeys"]
+- !private ["CSo8NSObject", "color"]
+- !private ["CSo8NSObject", "colorSpace"]
+- !private ["CSo8NSObject", "colorSpaceName"]
+- !private ["CSo8NSObject", "description"]
+- !private ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "allKeys"]
+- !private ["PSo16NSObjectProtocol", "color"]
+- !private ["PSo16NSObjectProtocol", "colorSpace"]
+- !private ["PSo16NSObjectProtocol", "colorSpaceName"]
+- !private ["PSo16NSObjectProtocol", "description"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo19NSPasteboardReading", "colorSpace"]
+- !private ["PSo19NSPasteboardReading", "colorSpaceName"]
+- ["PSo19NSPasteboardReading", "init"]
+- !private ["PSo19NSPasteboardWriting", "colorSpace"]
+- !private ["PSo19NSPasteboardWriting", "colorSpaceName"]
+- ["PSo19NSPasteboardWriting", "init"]
+- !private ["PSo14NSSecureCoding", "allKeys"]
+- !private ["PSo14NSSecureCoding", "color"]
+- !private ["PSo14NSSecureCoding", "colorSpace"]
+- !private ["PSo14NSSecureCoding", "colorSpaceName"]
+- !private ["PSo14NSSecureCoding", "description"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "filename"]
+- !private ["P10Foundation20ReferenceConvertible", "lastPathComponent"]
+- !private ["P10Foundation20ReferenceConvertible", "path"]
+- !private ["P10Foundation20ReferenceConvertible", "pathExtension"]
+- !private ["O10RswiftCore20ResourceParsingError", "deinit"]
+- !private ["O10RswiftCore20ResourceParsingError", "parsingFailed"]
+- !private ["Ps8Sequence", "subscript"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["V10Foundation3URL", "filename"]
+- !private ["V10Foundation3URL", "lastPathComponent"]
+- !private ["V10Foundation3URL", "path"]
+- !private ["V10Foundation3URL", "pathExtension"]
+- !private ["P10RswiftCore33WhiteListedExtensionsResourceType", "ColorPalette"]
+- !private ["P10RswiftCore33WhiteListedExtensionsResourceType", "NSCalibratedRGBColorSpace"]
+- !private ["P10RswiftCore33WhiteListedExtensionsResourceType", "NSColorList"]
+- !private ["P10RswiftCore33WhiteListedExtensionsResourceType", "ResourceParsingError"]
+- !private ["P10RswiftCore33WhiteListedExtensionsResourceType", "colors"]
+- !private ["P10RswiftCore33WhiteListedExtensionsResourceType", "filename"]
+- ["P10RswiftCore33WhiteListedExtensionsResourceType", "supportedExtensions"]
+- !private ["P10RswiftCore33WhiteListedExtensionsResourceType", "throwIfUnsupportedExtension"]
+- !private ["P10RswiftCore33WhiteListedExtensionsResourceType", "warn"]
+- ["P10RswiftCore33WhiteListedExtensionsResourceType", ""]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByColorLiteral", "colorSpace"]
+- !private ["Ps26_ExpressibleByColorLiteral", "colorSpaceName"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "filename"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "lastPathComponent"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "path"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "pathExtension"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "allKeys"]
+- !private ["Ps9_Hashable", "color"]
+- !private ["Ps9_Hashable", "colorSpace"]
+- !private ["Ps9_Hashable", "colorSpaceName"]
+- !private ["Ps9_Hashable", "description"]
+- !private ["Ps9_Hashable", "filename"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "lastPathComponent"]
+- !private ["Ps9_Hashable", "path"]
+- !private ["Ps9_Hashable", "pathExtension"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "filename"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "lastPathComponent"]
+- !private ["Ps21_ObjectiveCBridgeable", "path"]
+- !private ["Ps21_ObjectiveCBridgeable", "pathExtension"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- "V10RswiftCore12ColorPalette"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps5Error"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "PSo8NSCoding"
+- !private "CSo7NSColor"
+- !private "CSo11NSColorList"
+- !private "CSo12NSColorSpace"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo19NSPasteboardReading"
+- "PSo19NSPasteboardWriting"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "O10RswiftCore20ResourceParsingError"
+- !private "Ps8Sequence"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- !private "V10Foundation3URL"
+- "P10RswiftCore33WhiteListedExtensionsResourceType"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "a818b6da2d903244d1af9468829cf009"

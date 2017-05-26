@@ -1,0 +1,789 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "JsonObject"
+- "PBXObject"
+- "PBXContainer"
+- "PBXProject"
+- "PBXContainerItem"
+- "PBXContainerItemProxy"
+- "PBXProjectItem"
+- "PBXBuildFile"
+- "PBXBuildPhase"
+- "PBXCopyFilesBuildPhase"
+- "PBXFrameworksBuildPhase"
+- "PBXHeadersBuildPhase"
+- "PBXResourcesBuildPhase"
+- "PBXShellScriptBuildPhase"
+- "PBXSourcesBuildPhase"
+- "PBXBuildStyle"
+- "XCBuildConfiguration"
+- "PBXTarget"
+- "PBXAggregateTarget"
+- "PBXNativeTarget"
+- "PBXTargetDependency"
+- "XCConfigurationList"
+- "PBXReference"
+- "PBXFileReference"
+- "PBXReferenceProxy"
+- "PBXGroup"
+- "PBXVariantGroup"
+- "XCVersionGroup"
+- "SourceTree"
+- "SourceTreeFolder"
+- "Path"
+provides-nominal:
+- "C9XcodeEdit9PBXObject"
+- "C9XcodeEdit12PBXContainer"
+- "C9XcodeEdit10PBXProject"
+- "C9XcodeEdit16PBXContainerItem"
+- "C9XcodeEdit21PBXContainerItemProxy"
+- "C9XcodeEdit14PBXProjectItem"
+- "C9XcodeEdit12PBXBuildFile"
+- "C9XcodeEdit13PBXBuildPhase"
+- "C9XcodeEdit22PBXCopyFilesBuildPhase"
+- "C9XcodeEdit23PBXFrameworksBuildPhase"
+- "C9XcodeEdit20PBXHeadersBuildPhase"
+- "C9XcodeEdit22PBXResourcesBuildPhase"
+- "C9XcodeEdit24PBXShellScriptBuildPhase"
+- "C9XcodeEdit20PBXSourcesBuildPhase"
+- "C9XcodeEdit13PBXBuildStyle"
+- "C9XcodeEdit20XCBuildConfiguration"
+- "C9XcodeEdit9PBXTarget"
+- "C9XcodeEdit18PBXAggregateTarget"
+- "C9XcodeEdit15PBXNativeTarget"
+- "C9XcodeEdit19PBXTargetDependency"
+- "C9XcodeEdit19XCConfigurationList"
+- "C9XcodeEdit12PBXReference"
+- "C9XcodeEdit16PBXFileReference"
+- "C9XcodeEdit17PBXReferenceProxy"
+- "C9XcodeEdit8PBXGroup"
+- "C9XcodeEdit15PBXVariantGroup"
+- "C9XcodeEdit14XCVersionGroup"
+- "O9XcodeEdit10SourceTree"
+- "O9XcodeEdit16SourceTreeFolder"
+- "O9XcodeEdit4Path"
+provides-member:
+- ["C9XcodeEdit9PBXObject", ""]
+- ["C9XcodeEdit12PBXContainer", ""]
+- ["C9XcodeEdit10PBXProject", ""]
+- ["C9XcodeEdit16PBXContainerItem", ""]
+- ["C9XcodeEdit21PBXContainerItemProxy", ""]
+- ["C9XcodeEdit14PBXProjectItem", ""]
+- ["C9XcodeEdit12PBXBuildFile", ""]
+- ["C9XcodeEdit13PBXBuildPhase", ""]
+- ["C9XcodeEdit22PBXCopyFilesBuildPhase", ""]
+- ["C9XcodeEdit23PBXFrameworksBuildPhase", ""]
+- ["C9XcodeEdit20PBXHeadersBuildPhase", ""]
+- ["C9XcodeEdit22PBXResourcesBuildPhase", ""]
+- ["C9XcodeEdit24PBXShellScriptBuildPhase", ""]
+- ["C9XcodeEdit20PBXSourcesBuildPhase", ""]
+- ["C9XcodeEdit13PBXBuildStyle", ""]
+- ["C9XcodeEdit20XCBuildConfiguration", ""]
+- ["C9XcodeEdit9PBXTarget", ""]
+- ["C9XcodeEdit18PBXAggregateTarget", ""]
+- ["C9XcodeEdit15PBXNativeTarget", ""]
+- ["C9XcodeEdit19PBXTargetDependency", ""]
+- ["C9XcodeEdit19XCConfigurationList", ""]
+- ["C9XcodeEdit12PBXReference", ""]
+- ["C9XcodeEdit16PBXFileReference", ""]
+- ["C9XcodeEdit17PBXReferenceProxy", ""]
+- ["C9XcodeEdit8PBXGroup", ""]
+- ["C9XcodeEdit15PBXVariantGroup", ""]
+- ["C9XcodeEdit14XCVersionGroup", ""]
+- ["O9XcodeEdit10SourceTree", ""]
+- ["O9XcodeEdit16SourceTreeFolder", ""]
+- ["O9XcodeEdit4Path", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "AllObjects"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "JsonObject"
+- "PBXAggregateTarget"
+- "PBXBuildFile"
+- "PBXBuildPhase"
+- "PBXBuildStyle"
+- "PBXContainer"
+- "PBXContainerItem"
+- "PBXContainerItemProxy"
+- "PBXCopyFilesBuildPhase"
+- "PBXFileReference"
+- "PBXFrameworksBuildPhase"
+- "PBXGroup"
+- "PBXHeadersBuildPhase"
+- "PBXNativeTarget"
+- "PBXObject"
+- "PBXProject"
+- "PBXProjectItem"
+- "PBXReference"
+- "PBXReferenceProxy"
+- "PBXResourcesBuildPhase"
+- "PBXShellScriptBuildPhase"
+- "PBXSourcesBuildPhase"
+- "PBXTarget"
+- "PBXTargetDependency"
+- "PBXVariantGroup"
+- "Path"
+- "SourceTree"
+- "SourceTreeFolder"
+- "String"
+- "StringLiteralType"
+- "URL"
+- !private "UnicodeScalarType"
+- "XCBuildConfiguration"
+- "XCConfigurationList"
+- "XCVersionGroup"
+- !private "~="
+depends-member:
+- !private ["C9XcodeEdit10AllObjects", "fullFilePaths"]
+- !private ["C9XcodeEdit10AllObjects", "object"]
+- !private ["Ps9AnyObject", "PBXFileReference"]
+- !private ["Ps9AnyObject", "PBXGroup"]
+- !private ["Ps9AnyObject", "SourceTree"]
+- !private ["Ps9AnyObject", "allObjects"]
+- !private ["Ps9AnyObject", "bool"]
+- !private ["Ps9AnyObject", "children"]
+- !private ["Ps9AnyObject", "dict"]
+- !private ["Ps9AnyObject", "fullFilePaths"]
+- !private ["Ps9AnyObject", "id"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "object"]
+- !private ["Ps9AnyObject", "objects"]
+- !private ["Ps9AnyObject", "string"]
+- !private ["Ps9AnyObject", "strings"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "map"]
+- !private ["Sa", "ofType"]
+- !private ["Ps23BidirectionalCollection", "map"]
+- !private ["Ps23BidirectionalCollection", "ofType"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "hashValue"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "map"]
+- !private ["Ps7CVarArg", "ofType"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps10Collection", "map"]
+- !private ["Ps10Collection", "ofType"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "hashValue"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "appendingPathComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "flatMap"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "map"]
+- !private ["Ps28CustomDebugStringConvertible", "ofType"]
+- !private ["Ps28CustomDebugStringConvertible", "standardizedFileURL"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "appendingPathComponent"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "standardizedFileURL"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "flatMap"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "map"]
+- !private ["Ps17CustomReflectable", "ofType"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "appendingPathComponent"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "map"]
+- !private ["Ps23CustomStringConvertible", "ofType"]
+- !private ["Ps23CustomStringConvertible", "standardizedFileURL"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- !private ["Ps9Equatable", "appendingPathComponent"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "standardizedFileURL"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "map"]
+- !private ["Ps25ExpressibleByArrayLiteral", "ofType"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps23ExpressibleByNilLiteral", "flatMap"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- !private ["Ps8Hashable", "appendingPathComponent"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "standardizedFileURL"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "map"]
+- !private ["Ps17MutableCollection", "ofType"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- !private ["Sq", "flatMap"]
+- ["C9XcodeEdit18PBXAggregateTarget", "deinit"]
+- ["C9XcodeEdit18PBXAggregateTarget", "init"]
+- ["C9XcodeEdit12PBXBuildFile", "PBXReference"]
+- ["C9XcodeEdit12PBXBuildFile", "deinit"]
+- ["C9XcodeEdit12PBXBuildFile", "fileRef"]
+- !private ["C9XcodeEdit12PBXBuildFile", "fileRef.storage"]
+- ["C9XcodeEdit12PBXBuildFile", "init"]
+- !private ["C9XcodeEdit12PBXBuildFile", "object"]
+- ["C9XcodeEdit13PBXBuildPhase", "PBXBuildFile"]
+- ["C9XcodeEdit13PBXBuildPhase", "String"]
+- ["C9XcodeEdit13PBXBuildPhase", "deinit"]
+- ["C9XcodeEdit13PBXBuildPhase", "files"]
+- !private ["C9XcodeEdit13PBXBuildPhase", "files.storage"]
+- ["C9XcodeEdit13PBXBuildPhase", "init"]
+- ["C9XcodeEdit13PBXBuildPhase", "name"]
+- ["C9XcodeEdit13PBXBuildPhase", "name.storage"]
+- !private ["C9XcodeEdit13PBXBuildPhase", "objects"]
+- ["C9XcodeEdit13PBXBuildPhase", "shellScript"]
+- ["C9XcodeEdit13PBXBuildPhase", "shellScript.storage"]
+- !private ["C9XcodeEdit13PBXBuildPhase", "string"]
+- ["C9XcodeEdit13PBXBuildPhase", ""]
+- ["C9XcodeEdit13PBXBuildStyle", "String"]
+- ["C9XcodeEdit13PBXBuildStyle", "deinit"]
+- ["C9XcodeEdit13PBXBuildStyle", "init"]
+- ["C9XcodeEdit13PBXBuildStyle", "name"]
+- ["C9XcodeEdit13PBXBuildStyle", "name.storage"]
+- !private ["C9XcodeEdit13PBXBuildStyle", "string"]
+- ["C9XcodeEdit13PBXBuildStyle", ""]
+- ["C9XcodeEdit12PBXContainer", "Bool"]
+- ["C9XcodeEdit12PBXContainer", "PBXGroup"]
+- ["C9XcodeEdit12PBXContainer", "PBXNativeTarget"]
+- ["C9XcodeEdit12PBXContainer", "String"]
+- ["C9XcodeEdit12PBXContainer", "XCConfigurationList"]
+- !private ["C9XcodeEdit12PBXContainer", "bool"]
+- ["C9XcodeEdit12PBXContainer", "buildConfigurationList"]
+- ["C9XcodeEdit12PBXContainer", "buildConfigurationList.storage"]
+- ["C9XcodeEdit12PBXContainer", "deinit"]
+- ["C9XcodeEdit12PBXContainer", "developmentRegion"]
+- ["C9XcodeEdit12PBXContainer", "developmentRegion.storage"]
+- ["C9XcodeEdit12PBXContainer", "hasScannedForEncodings"]
+- ["C9XcodeEdit12PBXContainer", "hasScannedForEncodings.storage"]
+- ["C9XcodeEdit12PBXContainer", "init"]
+- ["C9XcodeEdit12PBXContainer", "knownRegions"]
+- ["C9XcodeEdit12PBXContainer", "knownRegions.storage"]
+- ["C9XcodeEdit12PBXContainer", "mainGroup"]
+- ["C9XcodeEdit12PBXContainer", "mainGroup.storage"]
+- !private ["C9XcodeEdit12PBXContainer", "object"]
+- !private ["C9XcodeEdit12PBXContainer", "objects"]
+- !private ["C9XcodeEdit12PBXContainer", "string"]
+- !private ["C9XcodeEdit12PBXContainer", "strings"]
+- ["C9XcodeEdit12PBXContainer", "targets"]
+- ["C9XcodeEdit12PBXContainer", "targets.storage"]
+- ["C9XcodeEdit12PBXContainer", ""]
+- ["C9XcodeEdit16PBXContainerItem", "PBXBuildFile"]
+- ["C9XcodeEdit16PBXContainerItem", "PBXBuildPhase"]
+- ["C9XcodeEdit16PBXContainerItem", "PBXContainerItemProxy"]
+- ["C9XcodeEdit16PBXContainerItem", "PBXFileReference"]
+- ["C9XcodeEdit16PBXContainerItem", "PBXGroup"]
+- ["C9XcodeEdit16PBXContainerItem", "PBXReference"]
+- ["C9XcodeEdit16PBXContainerItem", "Path"]
+- ["C9XcodeEdit16PBXContainerItem", "SourceTree"]
+- ["C9XcodeEdit16PBXContainerItem", "String"]
+- ["C9XcodeEdit16PBXContainerItem", "XCConfigurationList"]
+- !private ["C9XcodeEdit16PBXContainerItem", "allObjects"]
+- ["C9XcodeEdit16PBXContainerItem", "buildConfigurationList"]
+- ["C9XcodeEdit16PBXContainerItem", "buildConfigurationList.storage"]
+- ["C9XcodeEdit16PBXContainerItem", "buildPhases"]
+- ["C9XcodeEdit16PBXContainerItem", "buildPhases.storage"]
+- ["C9XcodeEdit16PBXContainerItem", "children"]
+- ["C9XcodeEdit16PBXContainerItem", "children.storage"]
+- ["C9XcodeEdit16PBXContainerItem", "deinit"]
+- ["C9XcodeEdit16PBXContainerItem", "fileRef"]
+- ["C9XcodeEdit16PBXContainerItem", "fileRef.storage"]
+- ["C9XcodeEdit16PBXContainerItem", "fileRefs"]
+- ["C9XcodeEdit16PBXContainerItem", "fileRefs.storage"]
+- ["C9XcodeEdit16PBXContainerItem", "files"]
+- ["C9XcodeEdit16PBXContainerItem", "files.storage"]
+- ["C9XcodeEdit16PBXContainerItem", "fullPath"]
+- ["C9XcodeEdit16PBXContainerItem", "fullPath.storage"]
+- !private ["C9XcodeEdit16PBXContainerItem", "id"]
+- ["C9XcodeEdit16PBXContainerItem", "init"]
+- ["C9XcodeEdit16PBXContainerItem", "name"]
+- ["C9XcodeEdit16PBXContainerItem", "name.storage"]
+- !private ["C9XcodeEdit16PBXContainerItem", "object"]
+- !private ["C9XcodeEdit16PBXContainerItem", "objects"]
+- ["C9XcodeEdit16PBXContainerItem", "path"]
+- ["C9XcodeEdit16PBXContainerItem", "path.storage"]
+- ["C9XcodeEdit16PBXContainerItem", "productName"]
+- ["C9XcodeEdit16PBXContainerItem", "productName.storage"]
+- ["C9XcodeEdit16PBXContainerItem", "remoteRef"]
+- ["C9XcodeEdit16PBXContainerItem", "remoteRef.storage"]
+- ["C9XcodeEdit16PBXContainerItem", "shellScript"]
+- ["C9XcodeEdit16PBXContainerItem", "shellScript.storage"]
+- ["C9XcodeEdit16PBXContainerItem", "sourceTree"]
+- ["C9XcodeEdit16PBXContainerItem", "sourceTree.storage"]
+- !private ["C9XcodeEdit16PBXContainerItem", "string"]
+- ["C9XcodeEdit16PBXContainerItem", "subGroups"]
+- ["C9XcodeEdit16PBXContainerItem", "subGroups.storage"]
+- ["C9XcodeEdit16PBXContainerItem", ""]
+- ["C9XcodeEdit21PBXContainerItemProxy", "deinit"]
+- ["C9XcodeEdit21PBXContainerItemProxy", "init"]
+- ["C9XcodeEdit22PBXCopyFilesBuildPhase", "String"]
+- ["C9XcodeEdit22PBXCopyFilesBuildPhase", "deinit"]
+- ["C9XcodeEdit22PBXCopyFilesBuildPhase", "init"]
+- ["C9XcodeEdit22PBXCopyFilesBuildPhase", "name"]
+- !private ["C9XcodeEdit22PBXCopyFilesBuildPhase", "name.storage"]
+- !private ["C9XcodeEdit22PBXCopyFilesBuildPhase", "string"]
+- ["C9XcodeEdit16PBXFileReference", "Path"]
+- !private ["C9XcodeEdit16PBXFileReference", "allObjects"]
+- ["C9XcodeEdit16PBXFileReference", "deinit"]
+- ["C9XcodeEdit16PBXFileReference", "fullPath"]
+- !private ["C9XcodeEdit16PBXFileReference", "fullPath.storage"]
+- !private ["C9XcodeEdit16PBXFileReference", "id"]
+- ["C9XcodeEdit16PBXFileReference", "init"]
+- ["C9XcodeEdit23PBXFrameworksBuildPhase", "deinit"]
+- ["C9XcodeEdit23PBXFrameworksBuildPhase", "init"]
+- ["C9XcodeEdit8PBXGroup", "PBXFileReference"]
+- ["C9XcodeEdit8PBXGroup", "PBXGroup"]
+- ["C9XcodeEdit8PBXGroup", "PBXReference"]
+- ["C9XcodeEdit8PBXGroup", "children"]
+- !private ["C9XcodeEdit8PBXGroup", "children.storage"]
+- ["C9XcodeEdit8PBXGroup", "deinit"]
+- ["C9XcodeEdit8PBXGroup", "fileRefs"]
+- !private ["C9XcodeEdit8PBXGroup", "fileRefs.storage"]
+- ["C9XcodeEdit8PBXGroup", "init"]
+- !private ["C9XcodeEdit8PBXGroup", "objects"]
+- ["C9XcodeEdit8PBXGroup", "subGroups"]
+- !private ["C9XcodeEdit8PBXGroup", "subGroups.storage"]
+- ["C9XcodeEdit8PBXGroup", ""]
+- ["C9XcodeEdit20PBXHeadersBuildPhase", "deinit"]
+- ["C9XcodeEdit20PBXHeadersBuildPhase", "init"]
+- ["C9XcodeEdit15PBXNativeTarget", "deinit"]
+- ["C9XcodeEdit15PBXNativeTarget", "init"]
+- ["C9XcodeEdit9PBXObject", "AllObjects"]
+- ["C9XcodeEdit9PBXObject", "AnyObject"]
+- ["C9XcodeEdit9PBXObject", "Bool"]
+- ["C9XcodeEdit9PBXObject", "JsonObject"]
+- ["C9XcodeEdit9PBXObject", "PBXBuildFile"]
+- ["C9XcodeEdit9PBXObject", "PBXBuildPhase"]
+- ["C9XcodeEdit9PBXObject", "PBXContainerItemProxy"]
+- ["C9XcodeEdit9PBXObject", "PBXFileReference"]
+- ["C9XcodeEdit9PBXObject", "PBXGroup"]
+- ["C9XcodeEdit9PBXObject", "PBXNativeTarget"]
+- ["C9XcodeEdit9PBXObject", "PBXObject"]
+- ["C9XcodeEdit9PBXObject", "PBXReference"]
+- ["C9XcodeEdit9PBXObject", "Path"]
+- ["C9XcodeEdit9PBXObject", "SourceTree"]
+- ["C9XcodeEdit9PBXObject", "String"]
+- ["C9XcodeEdit9PBXObject", "XCConfigurationList"]
+- ["C9XcodeEdit9PBXObject", "allObjects"]
+- ["C9XcodeEdit9PBXObject", "bool"]
+- ["C9XcodeEdit9PBXObject", "buildConfigurationList"]
+- ["C9XcodeEdit9PBXObject", "buildConfigurationList.storage"]
+- ["C9XcodeEdit9PBXObject", "buildPhases"]
+- ["C9XcodeEdit9PBXObject", "buildPhases.storage"]
+- ["C9XcodeEdit9PBXObject", "children"]
+- ["C9XcodeEdit9PBXObject", "children.storage"]
+- ["C9XcodeEdit9PBXObject", "deinit"]
+- ["C9XcodeEdit9PBXObject", "developmentRegion"]
+- ["C9XcodeEdit9PBXObject", "developmentRegion.storage"]
+- ["C9XcodeEdit9PBXObject", "dict"]
+- ["C9XcodeEdit9PBXObject", "fileRef"]
+- ["C9XcodeEdit9PBXObject", "fileRef.storage"]
+- ["C9XcodeEdit9PBXObject", "fileRefs"]
+- ["C9XcodeEdit9PBXObject", "fileRefs.storage"]
+- ["C9XcodeEdit9PBXObject", "files"]
+- ["C9XcodeEdit9PBXObject", "files.storage"]
+- ["C9XcodeEdit9PBXObject", "fullPath"]
+- ["C9XcodeEdit9PBXObject", "fullPath.storage"]
+- ["C9XcodeEdit9PBXObject", "hasScannedForEncodings"]
+- ["C9XcodeEdit9PBXObject", "hasScannedForEncodings.storage"]
+- ["C9XcodeEdit9PBXObject", "id"]
+- ["C9XcodeEdit9PBXObject", "init"]
+- ["C9XcodeEdit9PBXObject", "isa"]
+- !private ["C9XcodeEdit9PBXObject", "isa.storage"]
+- ["C9XcodeEdit9PBXObject", "knownRegions"]
+- ["C9XcodeEdit9PBXObject", "knownRegions.storage"]
+- ["C9XcodeEdit9PBXObject", "mainGroup"]
+- ["C9XcodeEdit9PBXObject", "mainGroup.storage"]
+- ["C9XcodeEdit9PBXObject", "name"]
+- ["C9XcodeEdit9PBXObject", "name.storage"]
+- ["C9XcodeEdit9PBXObject", "object"]
+- ["C9XcodeEdit9PBXObject", "objects"]
+- ["C9XcodeEdit9PBXObject", "path"]
+- ["C9XcodeEdit9PBXObject", "path.storage"]
+- ["C9XcodeEdit9PBXObject", "productName"]
+- ["C9XcodeEdit9PBXObject", "productName.storage"]
+- ["C9XcodeEdit9PBXObject", "remoteRef"]
+- ["C9XcodeEdit9PBXObject", "remoteRef.storage"]
+- ["C9XcodeEdit9PBXObject", "shellScript"]
+- ["C9XcodeEdit9PBXObject", "shellScript.storage"]
+- ["C9XcodeEdit9PBXObject", "sourceTree"]
+- ["C9XcodeEdit9PBXObject", "sourceTree.storage"]
+- ["C9XcodeEdit9PBXObject", "string"]
+- ["C9XcodeEdit9PBXObject", "strings"]
+- ["C9XcodeEdit9PBXObject", "subGroups"]
+- ["C9XcodeEdit9PBXObject", "subGroups.storage"]
+- ["C9XcodeEdit9PBXObject", "targets"]
+- ["C9XcodeEdit9PBXObject", "targets.storage"]
+- ["C9XcodeEdit9PBXObject", ""]
+- ["C9XcodeEdit10PBXProject", "Bool"]
+- ["C9XcodeEdit10PBXProject", "PBXGroup"]
+- ["C9XcodeEdit10PBXProject", "PBXNativeTarget"]
+- ["C9XcodeEdit10PBXProject", "String"]
+- ["C9XcodeEdit10PBXProject", "XCConfigurationList"]
+- !private ["C9XcodeEdit10PBXProject", "bool"]
+- ["C9XcodeEdit10PBXProject", "buildConfigurationList"]
+- !private ["C9XcodeEdit10PBXProject", "buildConfigurationList.storage"]
+- ["C9XcodeEdit10PBXProject", "deinit"]
+- ["C9XcodeEdit10PBXProject", "developmentRegion"]
+- !private ["C9XcodeEdit10PBXProject", "developmentRegion.storage"]
+- ["C9XcodeEdit10PBXProject", "hasScannedForEncodings"]
+- !private ["C9XcodeEdit10PBXProject", "hasScannedForEncodings.storage"]
+- ["C9XcodeEdit10PBXProject", "init"]
+- ["C9XcodeEdit10PBXProject", "knownRegions"]
+- !private ["C9XcodeEdit10PBXProject", "knownRegions.storage"]
+- ["C9XcodeEdit10PBXProject", "mainGroup"]
+- !private ["C9XcodeEdit10PBXProject", "mainGroup.storage"]
+- !private ["C9XcodeEdit10PBXProject", "object"]
+- !private ["C9XcodeEdit10PBXProject", "objects"]
+- !private ["C9XcodeEdit10PBXProject", "string"]
+- !private ["C9XcodeEdit10PBXProject", "strings"]
+- ["C9XcodeEdit10PBXProject", "targets"]
+- !private ["C9XcodeEdit10PBXProject", "targets.storage"]
+- ["C9XcodeEdit14PBXProjectItem", "PBXBuildFile"]
+- ["C9XcodeEdit14PBXProjectItem", "PBXBuildPhase"]
+- ["C9XcodeEdit14PBXProjectItem", "PBXReference"]
+- ["C9XcodeEdit14PBXProjectItem", "String"]
+- ["C9XcodeEdit14PBXProjectItem", "XCConfigurationList"]
+- ["C9XcodeEdit14PBXProjectItem", "buildConfigurationList"]
+- ["C9XcodeEdit14PBXProjectItem", "buildConfigurationList.storage"]
+- ["C9XcodeEdit14PBXProjectItem", "buildPhases"]
+- ["C9XcodeEdit14PBXProjectItem", "buildPhases.storage"]
+- ["C9XcodeEdit14PBXProjectItem", "deinit"]
+- ["C9XcodeEdit14PBXProjectItem", "fileRef"]
+- ["C9XcodeEdit14PBXProjectItem", "fileRef.storage"]
+- ["C9XcodeEdit14PBXProjectItem", "files"]
+- ["C9XcodeEdit14PBXProjectItem", "files.storage"]
+- ["C9XcodeEdit14PBXProjectItem", "init"]
+- ["C9XcodeEdit14PBXProjectItem", "name"]
+- ["C9XcodeEdit14PBXProjectItem", "name.storage"]
+- !private ["C9XcodeEdit14PBXProjectItem", "object"]
+- !private ["C9XcodeEdit14PBXProjectItem", "objects"]
+- ["C9XcodeEdit14PBXProjectItem", "productName"]
+- ["C9XcodeEdit14PBXProjectItem", "productName.storage"]
+- ["C9XcodeEdit14PBXProjectItem", "shellScript"]
+- ["C9XcodeEdit14PBXProjectItem", "shellScript.storage"]
+- !private ["C9XcodeEdit14PBXProjectItem", "string"]
+- ["C9XcodeEdit14PBXProjectItem", ""]
+- ["C9XcodeEdit12PBXReference", "PBXContainerItemProxy"]
+- ["C9XcodeEdit12PBXReference", "PBXFileReference"]
+- ["C9XcodeEdit12PBXReference", "PBXGroup"]
+- ["C9XcodeEdit12PBXReference", "PBXReference"]
+- ["C9XcodeEdit12PBXReference", "Path"]
+- ["C9XcodeEdit12PBXReference", "SourceTree"]
+- ["C9XcodeEdit12PBXReference", "String"]
+- !private ["C9XcodeEdit12PBXReference", "allObjects"]
+- ["C9XcodeEdit12PBXReference", "children"]
+- ["C9XcodeEdit12PBXReference", "children.storage"]
+- ["C9XcodeEdit12PBXReference", "deinit"]
+- ["C9XcodeEdit12PBXReference", "fileRefs"]
+- ["C9XcodeEdit12PBXReference", "fileRefs.storage"]
+- ["C9XcodeEdit12PBXReference", "fullPath"]
+- ["C9XcodeEdit12PBXReference", "fullPath.storage"]
+- !private ["C9XcodeEdit12PBXReference", "id"]
+- ["C9XcodeEdit12PBXReference", "init"]
+- ["C9XcodeEdit12PBXReference", "name"]
+- !private ["C9XcodeEdit12PBXReference", "name.storage"]
+- !private ["C9XcodeEdit12PBXReference", "object"]
+- !private ["C9XcodeEdit12PBXReference", "objects"]
+- ["C9XcodeEdit12PBXReference", "path"]
+- !private ["C9XcodeEdit12PBXReference", "path.storage"]
+- ["C9XcodeEdit12PBXReference", "remoteRef"]
+- ["C9XcodeEdit12PBXReference", "remoteRef.storage"]
+- ["C9XcodeEdit12PBXReference", "sourceTree"]
+- !private ["C9XcodeEdit12PBXReference", "sourceTree.storage"]
+- !private ["C9XcodeEdit12PBXReference", "string"]
+- ["C9XcodeEdit12PBXReference", "subGroups"]
+- ["C9XcodeEdit12PBXReference", "subGroups.storage"]
+- ["C9XcodeEdit12PBXReference", ""]
+- ["C9XcodeEdit17PBXReferenceProxy", "PBXContainerItemProxy"]
+- ["C9XcodeEdit17PBXReferenceProxy", "deinit"]
+- ["C9XcodeEdit17PBXReferenceProxy", "init"]
+- !private ["C9XcodeEdit17PBXReferenceProxy", "object"]
+- ["C9XcodeEdit17PBXReferenceProxy", "remoteRef"]
+- !private ["C9XcodeEdit17PBXReferenceProxy", "remoteRef.storage"]
+- ["C9XcodeEdit22PBXResourcesBuildPhase", "deinit"]
+- ["C9XcodeEdit22PBXResourcesBuildPhase", "init"]
+- ["C9XcodeEdit24PBXShellScriptBuildPhase", "String"]
+- ["C9XcodeEdit24PBXShellScriptBuildPhase", "deinit"]
+- ["C9XcodeEdit24PBXShellScriptBuildPhase", "init"]
+- ["C9XcodeEdit24PBXShellScriptBuildPhase", "name"]
+- !private ["C9XcodeEdit24PBXShellScriptBuildPhase", "name.storage"]
+- ["C9XcodeEdit24PBXShellScriptBuildPhase", "shellScript"]
+- !private ["C9XcodeEdit24PBXShellScriptBuildPhase", "shellScript.storage"]
+- !private ["C9XcodeEdit24PBXShellScriptBuildPhase", "string"]
+- ["C9XcodeEdit20PBXSourcesBuildPhase", "deinit"]
+- ["C9XcodeEdit20PBXSourcesBuildPhase", "init"]
+- ["C9XcodeEdit9PBXTarget", "PBXBuildPhase"]
+- ["C9XcodeEdit9PBXTarget", "String"]
+- ["C9XcodeEdit9PBXTarget", "XCConfigurationList"]
+- ["C9XcodeEdit9PBXTarget", "buildConfigurationList"]
+- !private ["C9XcodeEdit9PBXTarget", "buildConfigurationList.storage"]
+- ["C9XcodeEdit9PBXTarget", "buildPhases"]
+- !private ["C9XcodeEdit9PBXTarget", "buildPhases.storage"]
+- ["C9XcodeEdit9PBXTarget", "deinit"]
+- ["C9XcodeEdit9PBXTarget", "init"]
+- ["C9XcodeEdit9PBXTarget", "name"]
+- !private ["C9XcodeEdit9PBXTarget", "name.storage"]
+- !private ["C9XcodeEdit9PBXTarget", "object"]
+- !private ["C9XcodeEdit9PBXTarget", "objects"]
+- ["C9XcodeEdit9PBXTarget", "productName"]
+- !private ["C9XcodeEdit9PBXTarget", "productName.storage"]
+- !private ["C9XcodeEdit9PBXTarget", "string"]
+- ["C9XcodeEdit9PBXTarget", ""]
+- ["C9XcodeEdit19PBXTargetDependency", "deinit"]
+- ["C9XcodeEdit19PBXTargetDependency", "init"]
+- ["C9XcodeEdit15PBXVariantGroup", "deinit"]
+- ["C9XcodeEdit15PBXVariantGroup", "init"]
+- ["O9XcodeEdit4Path", "SourceTreeFolder"]
+- ["O9XcodeEdit4Path", "String"]
+- ["O9XcodeEdit4Path", "URL"]
+- ["O9XcodeEdit4Path", "absolute"]
+- ["O9XcodeEdit4Path", "relativeTo"]
+- ["O9XcodeEdit4Path", "url"]
+- !private ["Ps22RandomAccessCollection", "map"]
+- !private ["Ps22RandomAccessCollection", "ofType"]
+- !private ["Ps26RangeReplaceableCollection", "map"]
+- !private ["Ps26RangeReplaceableCollection", "ofType"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- ["Ps16RawRepresentable", "rawValue"]
+- ["Ps16RawRepresentable", ""]
+- !private ["P10Foundation20ReferenceConvertible", "appendingPathComponent"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "standardizedFileURL"]
+- !private ["Ps8Sequence", "map"]
+- !private ["Ps8Sequence", "ofType"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- ["O9XcodeEdit10SourceTree", "SourceTreeFolder"]
+- ["O9XcodeEdit10SourceTree", "String"]
+- ["O9XcodeEdit10SourceTree", "absolute"]
+- ["O9XcodeEdit10SourceTree", "group"]
+- ["O9XcodeEdit10SourceTree", "init"]
+- ["O9XcodeEdit10SourceTree", "relativeTo"]
+- ["O9XcodeEdit16SourceTreeFolder", "RawValue"]
+- ["O9XcodeEdit16SourceTreeFolder", "_toAnyHashable"]
+- ["O9XcodeEdit16SourceTreeFolder", "buildProductsDir"]
+- ["O9XcodeEdit16SourceTreeFolder", "deinit"]
+- ["O9XcodeEdit16SourceTreeFolder", "developerDir"]
+- ["O9XcodeEdit16SourceTreeFolder", "hashValue"]
+- ["O9XcodeEdit16SourceTreeFolder", "init"]
+- ["O9XcodeEdit16SourceTreeFolder", "rawValue"]
+- ["O9XcodeEdit16SourceTreeFolder", "sdkRoot"]
+- ["O9XcodeEdit16SourceTreeFolder", "sourceRoot"]
+- !private ["Ps10Strideable", "hashValue"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["V10Foundation3URL", "appendingPathComponent"]
+- !private ["V10Foundation3URL", "init"]
+- !private ["V10Foundation3URL", "standardizedFileURL"]
+- ["C9XcodeEdit20XCBuildConfiguration", "String"]
+- ["C9XcodeEdit20XCBuildConfiguration", "deinit"]
+- ["C9XcodeEdit20XCBuildConfiguration", "init"]
+- ["C9XcodeEdit20XCBuildConfiguration", "name"]
+- !private ["C9XcodeEdit20XCBuildConfiguration", "name.storage"]
+- !private ["C9XcodeEdit20XCBuildConfiguration", "string"]
+- ["C9XcodeEdit19XCConfigurationList", "deinit"]
+- ["C9XcodeEdit19XCConfigurationList", "init"]
+- ["C9XcodeEdit14XCVersionGroup", "deinit"]
+- ["C9XcodeEdit14XCVersionGroup", "init"]
+- !private ["Ps14_ArrayProtocol", "map"]
+- !private ["Ps14_ArrayProtocol", "ofType"]
+- !private ["Ps23_BidirectionalIndexable", "map"]
+- !private ["Ps23_BidirectionalIndexable", "ofType"]
+- !private ["Ps24_DestructorSafeContainer", "map"]
+- !private ["Ps24_DestructorSafeContainer", "ofType"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "appendingPathComponent"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "standardizedFileURL"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- !private ["Ps9_Hashable", "appendingPathComponent"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "standardizedFileURL"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps10_Indexable", "map"]
+- !private ["Ps10_Indexable", "ofType"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "map"]
+- !private ["Ps14_IndexableBase", "ofType"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps17_MutableIndexable", "map"]
+- !private ["Ps17_MutableIndexable", "ofType"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "appendingPathComponent"]
+- !private ["Ps21_ObjectiveCBridgeable", "flatMap"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "map"]
+- !private ["Ps21_ObjectiveCBridgeable", "ofType"]
+- !private ["Ps21_ObjectiveCBridgeable", "standardizedFileURL"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "map"]
+- !private ["Ps22_RandomAccessIndexable", "ofType"]
+- !private ["Ps26_RangeReplaceableIndexable", "map"]
+- !private ["Ps26_RangeReplaceableIndexable", "ofType"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- !private "C9XcodeEdit10AllObjects"
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- !private "Sq"
+- "C9XcodeEdit18PBXAggregateTarget"
+- "C9XcodeEdit12PBXBuildFile"
+- "C9XcodeEdit13PBXBuildPhase"
+- "C9XcodeEdit13PBXBuildStyle"
+- "C9XcodeEdit12PBXContainer"
+- "C9XcodeEdit16PBXContainerItem"
+- "C9XcodeEdit21PBXContainerItemProxy"
+- "C9XcodeEdit22PBXCopyFilesBuildPhase"
+- "C9XcodeEdit16PBXFileReference"
+- "C9XcodeEdit23PBXFrameworksBuildPhase"
+- "C9XcodeEdit8PBXGroup"
+- "C9XcodeEdit20PBXHeadersBuildPhase"
+- "C9XcodeEdit15PBXNativeTarget"
+- "C9XcodeEdit9PBXObject"
+- "C9XcodeEdit10PBXProject"
+- "C9XcodeEdit14PBXProjectItem"
+- "C9XcodeEdit12PBXReference"
+- "C9XcodeEdit17PBXReferenceProxy"
+- "C9XcodeEdit22PBXResourcesBuildPhase"
+- "C9XcodeEdit24PBXShellScriptBuildPhase"
+- "C9XcodeEdit20PBXSourcesBuildPhase"
+- "C9XcodeEdit9PBXTarget"
+- "C9XcodeEdit19PBXTargetDependency"
+- "C9XcodeEdit15PBXVariantGroup"
+- "O9XcodeEdit4Path"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- "O9XcodeEdit10SourceTree"
+- "O9XcodeEdit16SourceTreeFolder"
+- !private "Ps10Strideable"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- !private "V10Foundation3URL"
+- "C9XcodeEdit20XCBuildConfiguration"
+- "C9XcodeEdit19XCConfigurationList"
+- "C9XcodeEdit14XCVersionGroup"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "d34e758b299602b41bae480a0aa5cf0b"

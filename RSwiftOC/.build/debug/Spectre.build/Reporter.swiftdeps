@@ -1,0 +1,50 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Reporter"
+- "ContextReporter"
+provides-nominal:
+- "P7Spectre8Reporter"
+- "P7Spectre15ContextReporter"
+provides-member:
+- ["P7Spectre8Reporter", ""]
+- ["P7Spectre15ContextReporter", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Bool"
+- "ContextReporter"
+- "FailureType"
+- "Reporter"
+- "String"
+- "Void"
+depends-member:
+- ["P7Spectre15ContextReporter", "ContextReporter"]
+- ["P7Spectre15ContextReporter", "FailureType"]
+- ["P7Spectre15ContextReporter", "String"]
+- ["P7Spectre15ContextReporter", "Void"]
+- ["P7Spectre15ContextReporter", "addDisabled"]
+- ["P7Spectre15ContextReporter", "addFailure"]
+- ["P7Spectre15ContextReporter", "addSuccess"]
+- ["P7Spectre15ContextReporter", "report"]
+- ["P7Spectre8Reporter", "Bool"]
+- ["P7Spectre8Reporter", "ContextReporter"]
+- ["P7Spectre8Reporter", "Void"]
+- ["P7Spectre8Reporter", "report"]
+depends-nominal:
+- "P7Spectre15ContextReporter"
+- "P7Spectre8Reporter"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "d41de955dbb1afa948ca07ba421bf441"

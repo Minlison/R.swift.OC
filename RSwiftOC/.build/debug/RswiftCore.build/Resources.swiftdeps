@@ -1,0 +1,190 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ResourceParsingError"
+- "Resources"
+provides-nominal:
+- "O10RswiftCore20ResourceParsingError"
+- "V10RswiftCore9Resources"
+provides-member:
+- ["O10RswiftCore20ResourceParsingError", ""]
+- ["V10RswiftCore9Resources", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- "AssetFolder"
+- "AssignmentPrecedence"
+- !private "CastingPrecedence"
+- "ColorPalette"
+- "Error"
+- "FileManager"
+- "Font"
+- "Image"
+- "LocalizableStrings"
+- "Nib"
+- "ResourceFile"
+- "ResourceParsingError"
+- "Resources"
+- "Reusable"
+- !private "ReusableContainer"
+- "Set"
+- "Storyboard"
+- "String"
+- "URL"
+- !private "tryResourceParsing"
+- !private "warn"
+depends-member:
+- !private ["Sa", "flatMap"]
+- !private ["Sa", "map"]
+- !private ["V10RswiftCore11AssetFolder", "init"]
+- !private ["Ps23BidirectionalCollection", "flatMap"]
+- !private ["Ps23BidirectionalCollection", "map"]
+- !private ["Ps7CVarArg", "flatMap"]
+- !private ["Ps7CVarArg", "map"]
+- !private ["Ps10Collection", "flatMap"]
+- !private ["Ps10Collection", "map"]
+- !private ["V10RswiftCore12ColorPalette", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "flatMap"]
+- !private ["Ps28CustomDebugStringConvertible", "map"]
+- !private ["Ps17CustomReflectable", "flatMap"]
+- !private ["Ps17CustomReflectable", "map"]
+- !private ["Ps23CustomStringConvertible", "flatMap"]
+- !private ["Ps23CustomStringConvertible", "map"]
+- ["Ps5Error", "_code"]
+- ["Ps5Error", "_domain"]
+- ["Ps5Error", "_getEmbeddedNSError"]
+- ["Ps5Error", "_userInfo"]
+- !private ["Ps5Error", "parsingFailed"]
+- !private ["Ps5Error", "unsupportedExtension"]
+- ["Ps5Error", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "flatMap"]
+- !private ["Ps25ExpressibleByArrayLiteral", "map"]
+- !private ["V10RswiftCore4Font", "init"]
+- !private ["V10RswiftCore5Image", "init"]
+- !private ["V10RswiftCore18LocalizableStrings", "init"]
+- !private ["Ps17MutableCollection", "flatMap"]
+- !private ["Ps17MutableCollection", "map"]
+- !private ["V10RswiftCore3Nib", "deinit"]
+- !private ["V10RswiftCore3Nib", "init"]
+- !private ["Ps22RandomAccessCollection", "flatMap"]
+- !private ["Ps22RandomAccessCollection", "map"]
+- !private ["Ps26RangeReplaceableCollection", "flatMap"]
+- !private ["Ps26RangeReplaceableCollection", "map"]
+- !private ["V10RswiftCore12ResourceFile", "init"]
+- ["O10RswiftCore20ResourceParsingError", "Set"]
+- ["O10RswiftCore20ResourceParsingError", "String"]
+- ["O10RswiftCore20ResourceParsingError", "_code"]
+- ["O10RswiftCore20ResourceParsingError", "_domain"]
+- ["O10RswiftCore20ResourceParsingError", "_getEmbeddedNSError"]
+- ["O10RswiftCore20ResourceParsingError", "_userInfo"]
+- ["O10RswiftCore20ResourceParsingError", "deinit"]
+- ["O10RswiftCore20ResourceParsingError", "parsingFailed"]
+- ["O10RswiftCore20ResourceParsingError", "unsupportedExtension"]
+- ["V10RswiftCore9Resources", "AssetFolder"]
+- ["V10RswiftCore9Resources", "ColorPalette"]
+- ["V10RswiftCore9Resources", "FileManager"]
+- ["V10RswiftCore9Resources", "Font"]
+- ["V10RswiftCore9Resources", "Image"]
+- ["V10RswiftCore9Resources", "LocalizableStrings"]
+- ["V10RswiftCore9Resources", "Nib"]
+- ["V10RswiftCore9Resources", "ResourceFile"]
+- ["V10RswiftCore9Resources", "Reusable"]
+- !private ["V10RswiftCore9Resources", "ReusableContainer"]
+- ["V10RswiftCore9Resources", "Storyboard"]
+- ["V10RswiftCore9Resources", "URL"]
+- ["V10RswiftCore9Resources", "assetFolders"]
+- ["V10RswiftCore9Resources", "colors"]
+- ["V10RswiftCore9Resources", "fonts"]
+- ["V10RswiftCore9Resources", "images"]
+- ["V10RswiftCore9Resources", "init"]
+- ["V10RswiftCore9Resources", "localizableStrings"]
+- ["V10RswiftCore9Resources", "nibs"]
+- ["V10RswiftCore9Resources", "resourceFiles"]
+- ["V10RswiftCore9Resources", "reusables"]
+- ["V10RswiftCore9Resources", "storyboards"]
+- !private ["V10RswiftCore9Resources", "tryResourceParsing"]
+- !private ["P10RswiftCore17ReusableContainer", "init"]
+- !private ["P10RswiftCore17ReusableContainer", "reusables"]
+- !private ["Ps8Sequence", "flatMap"]
+- !private ["Ps8Sequence", "map"]
+- !private ["V10RswiftCore10Storyboard", "deinit"]
+- !private ["V10RswiftCore10Storyboard", "init"]
+- !private ["P10RswiftCore33WhiteListedExtensionsResourceType", "init"]
+- !private ["Ps14_ArrayProtocol", "flatMap"]
+- !private ["Ps14_ArrayProtocol", "map"]
+- !private ["Ps23_BidirectionalIndexable", "flatMap"]
+- !private ["Ps23_BidirectionalIndexable", "map"]
+- !private ["Ps24_DestructorSafeContainer", "flatMap"]
+- !private ["Ps24_DestructorSafeContainer", "map"]
+- !private ["Ps10_Indexable", "flatMap"]
+- !private ["Ps10_Indexable", "map"]
+- !private ["Ps14_IndexableBase", "flatMap"]
+- !private ["Ps14_IndexableBase", "map"]
+- !private ["Ps17_MutableIndexable", "flatMap"]
+- !private ["Ps17_MutableIndexable", "map"]
+- !private ["Ps21_ObjectiveCBridgeable", "flatMap"]
+- !private ["Ps21_ObjectiveCBridgeable", "map"]
+- !private ["Ps22_RandomAccessIndexable", "flatMap"]
+- !private ["Ps22_RandomAccessIndexable", "map"]
+- !private ["Ps26_RangeReplaceableIndexable", "flatMap"]
+- !private ["Ps26_RangeReplaceableIndexable", "map"]
+depends-nominal:
+- !private "Sa"
+- !private "V10RswiftCore11AssetFolder"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "V10RswiftCore12ColorPalette"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "Ps5Error"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "V10RswiftCore4Font"
+- !private "V10RswiftCore5Image"
+- !private "V10RswiftCore18LocalizableStrings"
+- !private "Ps17MutableCollection"
+- !private "V10RswiftCore3Nib"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "V10RswiftCore12ResourceFile"
+- "O10RswiftCore20ResourceParsingError"
+- "V10RswiftCore9Resources"
+- !private "P10RswiftCore17ReusableContainer"
+- !private "Ps8Sequence"
+- !private "V10RswiftCore10Storyboard"
+- !private "P10RswiftCore33WhiteListedExtensionsResourceType"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "7412db7f1586d1f46af75915c3288b3a"

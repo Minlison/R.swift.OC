@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/master.swiftdeps"
+  },
+  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/checkouts/XcodeEdit--4754805210155529311/Sources/Extensions.swift": {
+    "dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/Extensions.d",
+    "object": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/Extensions.swift.o",
+    "swiftmodule": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/Extensions.swiftdeps"
+  },
+  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/checkouts/XcodeEdit--4754805210155529311/Sources/PBXObject.swift": {
+    "dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/PBXObject.d",
+    "object": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/PBXObject.swift.o",
+    "swiftmodule": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/PBXObject~partial.swiftmodule",
+    "swift-dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/PBXObject.swiftdeps"
+  },
+  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/checkouts/XcodeEdit--4754805210155529311/Sources/Serialization.swift": {
+    "dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/Serialization.d",
+    "object": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/Serialization.swift.o",
+    "swiftmodule": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/Serialization~partial.swiftmodule",
+    "swift-dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/Serialization.swiftdeps"
+  },
+  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/checkouts/XcodeEdit--4754805210155529311/Sources/XCProjectFile.swift": {
+    "dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/XCProjectFile.d",
+    "object": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/XCProjectFile.swift.o",
+    "swiftmodule": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/XCProjectFile~partial.swiftmodule",
+    "swift-dependencies": "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.build/XCProjectFile.swiftdeps"
+  }
+}

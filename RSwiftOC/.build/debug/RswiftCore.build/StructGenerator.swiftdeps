@@ -1,0 +1,59 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "StructGenerator"
+- "ExternalOnlyStructGenerator"
+provides-nominal:
+- "P10RswiftCore15StructGenerator"
+- "P10RswiftCore27ExternalOnlyStructGenerator"
+provides-member:
+- ["P10RswiftCore15StructGenerator", ""]
+- ["P10RswiftCore27ExternalOnlyStructGenerator", ""]
+- ["P10RswiftCore27ExternalOnlyStructGenerator", "generatedStructs"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AccessLevel"
+- "ExternalOnlyStructGenerator"
+- "Struct"
+- "StructGenerator"
+depends-member:
+- ["P10RswiftCore27ExternalOnlyStructGenerator", "AccessLevel"]
+- ["P10RswiftCore27ExternalOnlyStructGenerator", "Struct"]
+- ["P10RswiftCore27ExternalOnlyStructGenerator", "StructGenerator"]
+- ["P10RswiftCore27ExternalOnlyStructGenerator", "generatedStruct"]
+- ["P10RswiftCore27ExternalOnlyStructGenerator", "generatedStructs"]
+- ["P10RswiftCore15StructGenerator", "AccessLevel"]
+- ["P10RswiftCore15StructGenerator", "Result"]
+- ["P10RswiftCore15StructGenerator", "Struct"]
+- ["P10RswiftCore15StructGenerator", "StructGenerator"]
+- ["P10RswiftCore15StructGenerator", "generatedStruct"]
+- ["P10RswiftCore15StructGenerator", "generatedStructs"]
+- ["P10RswiftCore15StructGenerator", ""]
+depends-nominal:
+- "P10RswiftCore27ExternalOnlyStructGenerator"
+- "P10RswiftCore15StructGenerator"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/debug/XcodeEdit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "dfba9e4fbac7ef598b10d34aacdb5ae4"
