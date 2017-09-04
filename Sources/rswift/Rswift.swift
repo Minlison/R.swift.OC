@@ -15,8 +15,7 @@ struct Rswift {
 }
 
 enum RSwiftOC : String {
-    case Generated = "Generated"
-    case AllHeader = "R.generated.h"
+    case Generated = "R.generated"
     case Image = "Image"
     case Font = "Font"
     case ResourceFile = "ResourceFile"

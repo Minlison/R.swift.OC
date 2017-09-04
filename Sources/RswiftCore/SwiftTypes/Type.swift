@@ -54,7 +54,7 @@ struct Type: UsedTypesProvider, CustomStringConvertible, Hashable {
     static let StoryboardResourceType = Type(module: .foundation, name: "NSURL")
     static let StoryboardResourceWithInitialControllerType = Type(module: .uikit, name: "StoryboardResourceWithInitialControllerType")
     static let StoryboardViewControllerResource = Type(module: .uikit, name: "NSURL")
-    static let NibResourceType = Type(module: .uikit, name: "NSURL")
+    static let NibResourceType = Type(module: .uikit, name: "UINib")
     static let FileResource = Type(module: .uikit, name: "NSURL")
     static let FontResource = Type(module: .uikit, name: "NSURL")
     static let ColorResource = Type(module: .uikit, name: "NSURL")

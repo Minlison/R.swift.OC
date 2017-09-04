@@ -94,10 +94,13 @@ struct Struct: UsedTypesProvider, SwiftCodeConverible {
         let categoryString = type.asNoPointer().description.uppercaseFirstCharacter + structs
             .map { $0.type.asNoPointer().description.uppercaseFirstCharacter }
             .joined(separator: "_")
-        
+        if functions.count <= 0 {
+            return "/// no func"
+        }
         if !structsString.isEmpty {
             return "\(structsString)"
         }
+        
         return "\(commentsString)@implementation \(type.className) (\(categoryString)) \n\(functionsString)\n@end\n\n"
     }
     var ocHeader: String {
@@ -120,9 +123,16 @@ struct Struct: UsedTypesProvider, SwiftCodeConverible {
             .joined(separator: "_")
 //        let bodyComponents = [functionsString].filter { $0 != "" }
 //        let bodyString = bodyComponents.joined(separator: "\n\n").indent(with: "")
+        
+        if functions.count <= 0 {
+            return "/// no func"
+        }
+        
         if !structsString.isEmpty {
             return "\(structsString)"
         }
+        
+        
         return "\(commentsString)\n@interface \(type.className) (\(categoryString)) \n\(functionsString)\n@end\n\n"
     }
 }
