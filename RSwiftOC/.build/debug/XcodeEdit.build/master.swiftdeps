@@ -1,8 +1,0 @@
-version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
-options: "b4c0a9016990809f632ff4e4e6d24c1d"
-build_time: [548508585, 483507000]
-inputs:
-  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/checkouts/XcodeEdit--4754805210155529311/Sources/Extensions.swift": [548508584, 0]
-  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/checkouts/XcodeEdit--4754805210155529311/Sources/PBXObject.swift": [548508584, 0]
-  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/checkouts/XcodeEdit--4754805210155529311/Sources/Serialization.swift": [548508584, 0]
-  "/Users/MinLison/Documents/GitHub/R.swift.OC/RSwiftOC/.build/checkouts/XcodeEdit--4754805210155529311/Sources/XCProjectFile.swift": [548508584, 0]
