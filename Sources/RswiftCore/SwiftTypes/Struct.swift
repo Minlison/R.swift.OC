@@ -96,7 +96,7 @@ struct Struct: UsedTypesProvider, SwiftCodeConverible {
             .joined(separator: "_")
         
         if functions.count <= 0 && structs.count <= 0 {
-            return "/// no func and structs"
+            return "/// \(type.className) no func and structs"
         }
         
         if !structsString.isEmpty {
@@ -127,7 +127,7 @@ struct Struct: UsedTypesProvider, SwiftCodeConverible {
 //        let bodyString = bodyComponents.joined(separator: "\n\n").indent(with: "")
         
         if functions.count <= 0 && structs.count <= 0 {
-            return "/// no func and structs"
+            return "/// \(type.className) no func and structs"
         }
         
         if !structsString.isEmpty {
