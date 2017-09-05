@@ -28,7 +28,7 @@ class AggregatedStructGenerator: StructGenerator {
     let externalStruct = Struct(
       comments: ["This `\(qualifiedName)` struct is generated and contains references to static resources."],
       accessModifier: externalAccessLevel,
-      type: Type(module: .uikit, name: structName),
+      type: Type(module: .uikit, name: structName).asClass(className: "NSObject"),
       implements: [],
       typealiasses: [],
       properties: [],
@@ -40,7 +40,7 @@ class AggregatedStructGenerator: StructGenerator {
     let internalStruct = Struct(
       comments: [],
       accessModifier: externalAccessLevel,
-      type: Type(module: .uikit, name: internalStructName),
+      type: Type(module: .uikit, name: internalStructName).asClass(className: "NSObject"),
       implements: [],
       typealiasses: [],
       properties: [],

@@ -31,23 +31,11 @@ class ValidatedStructGenerator: StructGenerator {
     let validationStruct = Struct(
       comments: [],
       accessModifier: .filePrivate,
-      type: Type(module: .uikit, name: "intern"),
-      implements: [TypePrinter(type: Type.Validatable)],
+      type: Type(module: .uikit, name: "intern").asClass(className: "NSObject"),
+      implements: [],
       typealiasses: [],
       properties: [],
-      functions: [
-        Function(
-          comments: [],
-          accessModifier: .filePrivate,
-          isStatic: true,
-          name: "validate",
-          generics: nil,
-          parameters: [],
-          doesThrow: true,
-          returnType: Type._Void,
-          body: validationFunctionBody
-        )
-      ],
+      functions: [],
       structs: [],
       classes: []
     )
@@ -82,22 +70,6 @@ private extension Struct {
 
     var outputStruct = self
     outputStruct.structs = childStructs
-    outputStruct.implements.append(TypePrinter(type: Type.Validatable))
-    outputStruct.functions.append(
-      Function(
-        comments: [],
-        accessModifier: externalAccessLevel,
-        isStatic: true,
-        name: "validate",
-        generics: nil,
-        parameters: [],
-        doesThrow: true,
-        returnType: Type._Void,
-        body: validatableStructs
-          .map { "try \($0.type).validate()" }
-          .joined(separator: "\n")
-      )
-    )
 
     return outputStruct
   }

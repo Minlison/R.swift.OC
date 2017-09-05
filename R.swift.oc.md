@@ -13,4 +13,4 @@
 ```
 
 * 5. build 你的项目
-* 6. 你的项目的 .xcodeproj 同级目录下会生成 Generated 文件夹, 以 Greate groups 的形式引入, 并不要勾选 Copy items if need 选项.
+* 6. 你的项目的 .xcodeproj 同级目录下会生成 Generated 文件夹, 里面有 R.generated.h 和 R.generated.m 两个文件, 引入项目, 不要勾选 `Copy items if need` 选项.

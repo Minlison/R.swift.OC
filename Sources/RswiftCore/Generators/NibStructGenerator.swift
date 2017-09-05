@@ -48,7 +48,7 @@ struct NibStructGenerator: StructGenerator {
     let internalStruct = Struct(
       comments: [],
       accessModifier: externalAccessLevel,
-      type: Type(module: .uikit, name: structName).asClass(className: "UINib"),
+      type: Type(module: .uikit, name: SwiftIdentifier(name:structName.orginalName  + "Internal")).asClass(className: "UINib"),
       implements: [],
       typealiasses: [],
       properties: [],
@@ -69,7 +69,7 @@ struct NibStructGenerator: StructGenerator {
     let externalStruct = Struct(
       comments: ["This R`\(qualifiedName)` struct is generated, and contains static references to \(nibProperties.count) nibs."],
       accessModifier: externalAccessLevel,
-      type: Type(module: .uikit, name: structName).asClass(className: "UINib"),
+      type: Type(module: .uikit, name: SwiftIdentifier(name:structName.orginalName  + "External")).asClass(className: "UINib"),
       implements: [],
       typealiasses: [],
       properties: [],

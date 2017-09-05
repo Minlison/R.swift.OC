@@ -31,7 +31,7 @@
 
 
 /// Value: Pre Eta (| %@ - %#@second@ - %d|)
-+ (NSString *)correctEta_:(NSString *)value1 Second:(int)value2 _:(int)value3;
++ (NSString *)correctEtaValue1:(NSString *)value1 Second:(int)value2 Value3:(int)value3;
 
 
 /// Value: Pre Gamma (| %2$#@second@ x %1$#@first@ |)
@@ -43,23 +43,23 @@
 
 
 /// Value: Pre Zeta (| %@ %2$#@second@ |)
-+ (NSString *)correctZeta_:(NSString *)value1 Second:(int)value2;
++ (NSString *)correctZetaValue1:(NSString *)value1 Second:(int)value2;
 
 
 /// Value: four  - %.2f
-+ (NSString *)precision4_:(double)value1;
++ (NSString *)precision4Value1:(double)value1;
 
 
 /// Value: one   - %012.2f
-+ (NSString *)precision1_:(double)value1;
++ (NSString *)precision1Value1:(double)value1;
 
 
 /// Value: three - %12.4f
-+ (NSString *)precision3_:(double)value1;
++ (NSString *)precision3Value1:(double)value1;
 
 
 /// Value: two   - %12.2f
-+ (NSString *)precision2_:(double)value1;
++ (NSString *)precision2Value1:(double)value1;
 @end
 
 
@@ -83,7 +83,7 @@
 /// en translation: There are %d lights!
 /// 
 /// Locales: en, es, ja
-+ (NSString *)quote_:(int)value1;
++ (NSString *)quoteValue1:(int)value1;
 
 
 /// ja translation: Not translated in other languages, and there is no Base
@@ -107,7 +107,7 @@
 /// Base translation: %1$d of %2$i files copied, %3$f.2%% completed.
 /// 
 /// Locales: Base, nl
-+ (NSString *)copyProgress_:(int)value1 _:(int)value2 _:(double)value3;
++ (NSString *)copyProgressValue1:(int)value1 Value2:(int)value2 Value3:(double)value3;
 
 
 /// Base translation: ABC "\DEF/" GHI Base
@@ -131,7 +131,7 @@
 /// Base translation: Nothing
 /// 
 /// Locales: Base, nl
-+ (NSString *)formatSpecifiers3_:(int)value1 _:(int)value2 _:(NSString *)value3;
++ (NSString *)formatSpecifiers3Value1:(int)value1 Value2:(int)value2 Value3:(NSString *)value3;
 
 
 /// Base translation: Settings
@@ -149,13 +149,13 @@
 /// Base translation: number 1: %1$d
 /// 
 /// Locales: Base, nl
-+ (NSString *)formatSpecifiers4_:(int)value1 _:(int)value2 _:(NSString *)value3;
++ (NSString *)formatSpecifiers4Value1:(int)value1 Value2:(int)value2 Value3:(NSString *)value3;
 
 
 /// Base translation: number 1: %d, number 2: %i, string 3: %@
 /// 
 /// Locales: Base, nl
-+ (NSString *)formatSpecifiers1_:(int)value1 _:(int)value2 _:(NSString *)value3;
++ (NSString *)formatSpecifiers1Value1:(int)value1 Value2:(int)value2 Value3:(NSString *)value3;
 @end
 
 

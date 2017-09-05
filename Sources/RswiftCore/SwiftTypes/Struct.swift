@@ -94,9 +94,11 @@ struct Struct: UsedTypesProvider, SwiftCodeConverible {
         let categoryString = type.asNoPointer().description.uppercaseFirstCharacter + structs
             .map { $0.type.asNoPointer().description.uppercaseFirstCharacter }
             .joined(separator: "_")
-        if functions.count <= 0 {
-            return "/// no func"
+        
+        if functions.count <= 0 && structs.count <= 0 {
+            return "/// no func and structs"
         }
+        
         if !structsString.isEmpty {
             return "\(structsString)"
         }
@@ -118,14 +120,14 @@ struct Struct: UsedTypesProvider, SwiftCodeConverible {
             .sorted()
             .map { $0.description }
             .joined(separator: "\n\n")
-        let categoryString = type.asNoPointer().description.uppercaseFirstCharacter + structs
-            .map { $0.type.asNoPointer().description.uppercaseFirstCharacter }
+        let categoryString = type.asNoPointer().name.description.uppercaseFirstCharacter + structs
+            .map { $0.type.name.description.uppercaseFirstCharacter }
             .joined(separator: "_")
 //        let bodyComponents = [functionsString].filter { $0 != "" }
 //        let bodyString = bodyComponents.joined(separator: "\n\n").indent(with: "")
         
-        if functions.count <= 0 {
-            return "/// no func"
+        if functions.count <= 0 && structs.count <= 0 {
+            return "/// no func and structs"
         }
         
         if !structsString.isEmpty {

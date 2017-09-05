@@ -60,7 +60,7 @@ struct Type: UsedTypesProvider, CustomStringConvertible, Hashable {
     static let ColorResource = Type(module: .uikit, name: "NSURL")
     static let ImageResource = Type(module: .uikit, name: "NSURL")
     static let StringResource = Type(module: .uikit, name: "NSURL")
-    static let Strings = Type(module: .uikit, name: "Strings")
+    static let Strings = Type(module: .uikit, name: "NSString")
     static let Validatable = Type(module: .uikit, name: "Validatable")
     static let TypedStoryboardSegueInfo = Type(module: .uikit, name: "TypedStoryboardSegueInfo", genericArgs: [TypeVar(description: "Segue", usedTypes: []), TypeVar(description: "Source", usedTypes: []), TypeVar(description: "Destination", usedTypes: [])])
     

@@ -211,9 +211,7 @@ struct StringsStructGenerator: ExternalOnlyStructGenerator {
       isStatic: true,
       name: SwiftIdentifier(name: values.key),
       generics: nil,
-      parameters: [
-        Function.Parameter(name: "_", type: Type._Void, defaultValue: "()")
-      ],
+      parameters: [],
       doesThrow: false,
       returnType: Type._String.asClass(className: "NSString"),
       body: "return \(values.localizedString);"
@@ -224,7 +222,7 @@ struct StringsStructGenerator: ExternalOnlyStructGenerator {
 
     let params = values.params.enumerated().map { arg -> Function.Parameter in
       let (ix, param) = arg
-      let argumentLabel = param.name ?? "_"
+      let argumentLabel = param.name ?? "Value\(ix + 1)"
       let valueName = "value\(ix + 1)"
 
       return Function.Parameter(name: argumentLabel, localName: valueName, type: param.spec.type)

@@ -9,7 +9,7 @@
 
 /// This R`.nib` struct is generated, and contains static references to 10 nibs.
 
-@interface UINib (Nib) 
+@interface UINib (External) 
 
 /// `[UINib nibWithNibName:@"ADuplicateCellView" bundle:nil]`
 + (UINib *)aDuplicateCellView;

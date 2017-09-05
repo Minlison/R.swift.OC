@@ -40,7 +40,7 @@ public struct RswiftCore {
                 StringsStructGenerator(localizableStrings: resources.localizableStrings),
                 ]
             
-            var allGeneratorsHeader : Set<Module> = []
+//            var allGeneratorsHeader : Set<Module> = []
             
             
             let currentOutPutFileDir = callInformation.outputURL.path
@@ -50,104 +50,182 @@ public struct RswiftCore {
                 try FileManager.default.createDirectory(atPath: currentOutPutFileDir, withIntermediateDirectories: true, attributes: nil)
             }
             
-            for fileGenerator in generators {
-                let result = fileGenerator.generatedStructs(at: callInformation.accessLevel, prefix: "")
-                let (externalStructWithoutProperties, internalStruct) = result
-//                let (externalStructWithoutProperties, internalStruct) = ValidatedStructGenerator(validationSubject: result)
-//                    .generatedStructs(at: callInformation.accessLevel, prefix: "")
-                
-                let externalStruct = externalStructWithoutProperties//.addingInternalProperties(forBundleIdentifier: callInformation.bundleIdentifier)
-                
-                let currentFileName = "R_" + result.externalStruct.type.asNoPointer().description.uppercaseFirstCharacter;
-                
-                let headerCodeConvertibles: [SwiftCodeConverible?] = [
-                    HeaderPrinter(),
-                    ImportPrinter(
-                        modules: callInformation.imports,
-                        extractFrom: [externalStruct, internalStruct],
-                        exclude: [Module.custom(name: callInformation.productModuleName)]
-                    ),
-                    externalStruct,
-                    internalStruct
-                ]
-                
-                allGeneratorsHeader.update(with: Module.custom(name: currentFileName))
-                
-                let impCodeConvertibles: [SwiftCodeConverible?] = [
-                    HeaderPrinter(),
-                    ImportPrinter(
-                        modules: [Module.custom(name: currentFileName)],
-                        extractFrom: [],
-                        exclude: []
-                    ),
-                    externalStruct,
-                    internalStruct
-                ]
-                
-                let fileImp = impCodeConvertibles
-                    .flatMap { $0?.ocImp }
-                    .joined(separator: "\n\n")
-                    + "\n" // Newline at end of file
-                
-                let fileHeader = headerCodeConvertibles
-                    .flatMap { $0?.ocHeader }
-                    .joined(separator: "\n\n")
-                    + "\n" // Newline at end of file
-                
-                // Write file if we have changes
-                
-                let currentFileUrlWithOutExt = URL(fileURLWithPath: currentOutPutFileDir, isDirectory: true).appendingPathComponent(currentFileName)
-                let currentFileImpUrl = currentFileUrlWithOutExt.appendingPathExtension("m")
-                let currentFileHeaderUrl = currentFileUrlWithOutExt.appendingPathExtension("h")
-                
-                
-                let currentFileImp = try? String(contentsOf: currentFileImpUrl, encoding: .utf8)
-                let currentFileHeader = try? String(contentsOf:currentFileHeaderUrl, encoding: .utf8)
-                if currentFileImp != fileImp  {
-                    do {
-                        try fileImp.write(to:currentFileImpUrl, atomically: true, encoding: .utf8)
-                    } catch {
-                        fail(error.localizedDescription)
-                    }
-                }
-                
-                if currentFileHeader != fileHeader  {
-                    do {
-                        try fileHeader.write(to: currentFileHeaderUrl, atomically: true, encoding: .utf8)
-                    } catch {
-                        fail(error.localizedDescription)
-                    }
-                }
-            }
+            ///// 生成一个文件
+            let aggregatedResult = AggregatedStructGenerator(subgenerators: generators)
+                .generatedStructs(at: callInformation.accessLevel, prefix: "")
             
-            let allHeaderCodeConvertibles: [SwiftCodeConverible?] = [
+            let (externalStructWithoutProperties, internalStruct) = ValidatedStructGenerator(validationSubject: aggregatedResult)
+                .generatedStructs(at: callInformation.accessLevel, prefix: "")
+//
+            let externalStruct = externalStructWithoutProperties//.addingInternalProperties(forBundleIdentifier: callInformation.bundleIdentifier)
+//
+            let generatedFileName = callInformation.outputURL.lastPathComponent
+//
+            let headerCodeConvertibles: [SwiftCodeConverible?] = [
                 HeaderPrinter(),
                 ImportPrinter(
-                    modules: allGeneratorsHeader,
+                    modules: callInformation.imports,
+                    extractFrom: [externalStruct, internalStruct],
+                    exclude: [Module.custom(name: callInformation.productModuleName)]
+                ),
+                externalStruct,
+                internalStruct
+            ]
+
+            let impCodeConvertibles: [SwiftCodeConverible?] = [
+                HeaderPrinter(),
+                ImportPrinter(
+                    modules: [Module.custom(name: generatedFileName)],
                     extractFrom: [],
                     exclude: []
-                )
+                ),
+                externalStruct,
+                internalStruct
             ]
+
             
-            let allHeader = allHeaderCodeConvertibles
+            let fileHeaderContent = headerCodeConvertibles
                 .flatMap { $0?.ocHeader }
                 .joined(separator: "\n\n")
-                + "\n"
+                + "\n" // Newline at end of file
             
             
-            let allHeaderFileUrlWithOutExt = URL(fileURLWithPath: currentOutPutFileDir, isDirectory: true).appendingPathComponent(callInformation.outputURL.lastPathComponent)
-            let allHeaderFileUrl = allHeaderFileUrlWithOutExt.appendingPathExtension("h")
             
-            let allHeaderFileHeader = try? String(contentsOf:allHeaderFileUrl, encoding: .utf8)
-
-            if allHeader != allHeaderFileHeader  {
+            // Write file if we have changes
+            let rootFileDir = URL(fileURLWithPath: currentOutPutFileDir, isDirectory: true)
+            
+            let headerFileUrl = rootFileDir.appendingPathComponent(generatedFileName).appendingPathExtension("h")
+            
+            
+            let currentHeaderFileContents = try? String(contentsOf: headerFileUrl, encoding: .utf8)
+            
+            if currentHeaderFileContents != fileHeaderContent  {
                 do {
-                    try allHeader.write(to: allHeaderFileUrl, atomically: true, encoding: .utf8)
+                    try fileHeaderContent.write(to: headerFileUrl, atomically: true, encoding: .utf8)
                 } catch {
                     fail(error.localizedDescription)
                 }
             }
             
+            
+            let fileImpContent = impCodeConvertibles
+                .flatMap { $0?.ocImp }
+                .joined(separator: "\n\n")
+                + "\n" // Newline at end of file
+            
+            let impFileUrl = rootFileDir.appendingPathComponent(generatedFileName).appendingPathExtension("m")
+            let currentImpFileContents = try? String(contentsOf: impFileUrl, encoding: .utf8)
+            
+            
+            if currentImpFileContents != fileImpContent  {
+                do {
+                    try fileImpContent.write(to: impFileUrl, atomically: true, encoding: .utf8)
+                } catch {
+                    fail(error.localizedDescription)
+                }
+            }
+            
+            ///// 生成一个文件 end
+            
+            ///// 生成多个文件
+//            for fileGenerator in generators {
+//                let result = fileGenerator.generatedStructs(at: callInformation.accessLevel, prefix: "")
+//                let (externalStructWithoutProperties, internalStruct) = result
+////                let (externalStructWithoutProperties, internalStruct) = ValidatedStructGenerator(validationSubject: result)
+////                    .generatedStructs(at: callInformation.accessLevel, prefix: "")
+//                
+//                let externalStruct = externalStructWithoutProperties//.addingInternalProperties(forBundleIdentifier: callInformation.bundleIdentifier)
+//                
+//                let currentFileName = "R_" + result.externalStruct.type.asNoPointer().description.uppercaseFirstCharacter;
+//                
+//                let headerCodeConvertibles: [SwiftCodeConverible?] = [
+//                    HeaderPrinter(),
+//                    ImportPrinter(
+//                        modules: callInformation.imports,
+//                        extractFrom: [externalStruct, internalStruct],
+//                        exclude: [Module.custom(name: callInformation.productModuleName)]
+//                    ),
+//                    externalStruct,
+//                    internalStruct
+//                ]
+//                
+//                allGeneratorsHeader.update(with: Module.custom(name: currentFileName))
+//                
+//                let impCodeConvertibles: [SwiftCodeConverible?] = [
+//                    HeaderPrinter(),
+//                    ImportPrinter(
+//                        modules: [Module.custom(name: currentFileName)],
+//                        extractFrom: [],
+//                        exclude: []
+//                    ),
+//                    externalStruct,
+//                    internalStruct
+//                ]
+//                
+//                let fileImp = impCodeConvertibles
+//                    .flatMap { $0?.ocImp }
+//                    .joined(separator: "\n\n")
+//                    + "\n" // Newline at end of file
+//                
+//                let fileHeader = headerCodeConvertibles
+//                    .flatMap { $0?.ocHeader }
+//                    .joined(separator: "\n\n")
+//                    + "\n" // Newline at end of file
+//                
+//                // Write file if we have changes
+//                
+//                let currentFileUrlWithOutExt = URL(fileURLWithPath: currentOutPutFileDir, isDirectory: true).appendingPathComponent(currentFileName)
+//                let currentFileImpUrl = currentFileUrlWithOutExt.appendingPathExtension("m")
+//                let currentFileHeaderUrl = currentFileUrlWithOutExt.appendingPathExtension("h")
+//                
+//                
+//                let currentFileImp = try? String(contentsOf: currentFileImpUrl, encoding: .utf8)
+//                let currentFileHeader = try? String(contentsOf:currentFileHeaderUrl, encoding: .utf8)
+//                if currentFileImp != fileImp  {
+//                    do {
+//                        try fileImp.write(to:currentFileImpUrl, atomically: true, encoding: .utf8)
+//                    } catch {
+//                        fail(error.localizedDescription)
+//                    }
+//                }
+//                
+//                if currentFileHeader != fileHeader  {
+//                    do {
+//                        try fileHeader.write(to: currentFileHeaderUrl, atomically: true, encoding: .utf8)
+//                    } catch {
+//                        fail(error.localizedDescription)
+//                    }
+//                }
+//            }
+//            
+//            let allHeaderCodeConvertibles: [SwiftCodeConverible?] = [
+//                HeaderPrinter(),
+//                ImportPrinter(
+//                    modules: allGeneratorsHeader,
+//                    extractFrom: [],
+//                    exclude: []
+//                )
+//            ]
+//            
+//            let allHeader = allHeaderCodeConvertibles
+//                .flatMap { $0?.ocHeader }
+//                .joined(separator: "\n\n")
+//                + "\n"
+//            
+//            
+//            let allHeaderFileUrlWithOutExt = URL(fileURLWithPath: currentOutPutFileDir, isDirectory: true).appendingPathComponent(callInformation.outputURL.lastPathComponent)
+//            let allHeaderFileUrl = allHeaderFileUrlWithOutExt.appendingPathExtension("h")
+//            
+//            let allHeaderFileHeader = try? String(contentsOf:allHeaderFileUrl, encoding: .utf8)
+//
+//            if allHeader != allHeaderFileHeader  {
+//                do {
+//                    try allHeader.write(to: allHeaderFileUrl, atomically: true, encoding: .utf8)
+//                } catch {
+//                    fail(error.localizedDescription)
+//                }
+//            }
+            ///// 生成多个文件
             
         } catch let error as ResourceParsingError {
             switch error {
