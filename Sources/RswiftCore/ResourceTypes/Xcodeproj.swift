@@ -29,25 +29,27 @@ struct Xcodeproj: WhiteListedExtensionsResourceType {
   func resourcePathsForTarget(_ targetName: String) throws -> [Path] {
     // Look for target in project file
     let allTargets = projectFile.project.targets
-    guard let target = allTargets.filter({ $0.name == targetName }).first else {
-      let availableTargets = allTargets.map { $0.name }.joined(separator: ", ")
+    
+    guard let target = allTargets.filter({ $0.value!.name == targetName }).first else {
+        
+      let availableTargets = allTargets.map { $0.value!.name }.joined(separator: ", ")
       throw ResourceParsingError.parsingFailed("Target '\(targetName)' not found in project file, available targets are: \(availableTargets)")
     }
 
-    let resourcesFileRefs = target.buildPhases
-      .flatMap { $0 as? PBXResourcesBuildPhase }
+    let resourcesFileRefs = target.value!.buildPhases
+        .compactMap { $0.value as? PBXResourcesBuildPhase }
       .flatMap { $0.files }
-      .map { $0.fileRef }
+      .map { $0.value!.fileRef }
 
     let fileRefPaths = resourcesFileRefs
-      .flatMap { $0 as? PBXFileReference }
+        .compactMap { $0?.value as? PBXFileReference }
       .map { $0.fullPath }
 
     let variantGroupPaths = resourcesFileRefs
-      .flatMap { $0 as? PBXVariantGroup }
+        .compactMap { $0?.value as? PBXVariantGroup }
       .flatMap { $0.fileRefs }
-      .map { $0.fullPath }
+      .map { $0.value!.fullPath }
 
-    return fileRefPaths + variantGroupPaths
+    return fileRefPaths + variantGroupPaths as! [Path]
   }
 }

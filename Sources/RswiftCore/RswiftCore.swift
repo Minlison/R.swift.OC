@@ -14,8 +14,11 @@ public struct RswiftCore {
     static var isEdgeEnabled = false
     
     static public func run(_ callInformation: CallInformation) throws {
-        
+        warn("......1.")
+        warn("......1");
         do {
+            warn(".......")
+            warn("......");
             RswiftCore.isEdgeEnabled = callInformation.edgeEnabled
             
             let xcodeproj = try Xcodeproj(url: callInformation.xcodeprojURL)
@@ -23,9 +26,12 @@ public struct RswiftCore {
             
             let resourceURLs = try xcodeproj.resourcePathsForTarget(callInformation.targetName)
                 .map { path in path.url(with: callInformation.urlForSourceTreeFolder) }
-                .flatMap { $0 }
+                .compactMap { $0 }
                 .filter { !ignoreFile.matches(url: $0) }
-            
+            warn(".......")
+            warn("......");
+            warn(resourceURLs.description);
+            warn("......");
             let resources = Resources(resourceURLs: resourceURLs, fileManager: FileManager.default)
             
             let generators: [StructGenerator] = [

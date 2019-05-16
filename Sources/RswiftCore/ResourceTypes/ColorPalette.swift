@@ -29,7 +29,7 @@ struct ColorPalette: WhiteListedExtensionsResourceType {
     var colors: [String: NSColor] = [:]
     for key in colorList.allKeys {
       guard let color = colorList.color(withKey: key) else { continue }
-      guard color.colorSpaceName == NSCalibratedRGBColorSpace else {
+        guard color.colorSpaceName == NSColorSpaceName.calibratedRGB else {
         warn("Skipping color '\(key)' in '\(url.lastPathComponent)' because it is colorspace '\(color.colorSpace.description)', R.swift currently only supports colorspace RGB")
         continue
       }

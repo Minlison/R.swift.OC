@@ -65,7 +65,7 @@ public class Glob: Collection {
   public var startIndex: Int { return paths.startIndex }
   public var endIndex: Int   { return paths.endIndex   }
 
-  public init(pattern: String, behavior: Behavior = Glob.defaultBehavior) {
+  public init(pattern: String, behavior: Behavior = GlobBehaviorBashV4) {
 
     self.behavior = behavior
 
